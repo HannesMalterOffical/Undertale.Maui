@@ -51,7 +51,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\azgorefrontpage.png" />
+	  <None Remove="Resources\Images\frontpagebanner.png" />
 	  <None Remove="Resources\Images\Sans_undertale.jpg" />
+	  <None Remove="Resources\Images\torielfrontpage.png" />
 	  <None Remove="Resources\Images\undynefrontpage.jpg" />
 	</ItemGroup>
 

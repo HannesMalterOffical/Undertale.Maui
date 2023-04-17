@@ -2,14 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Views.BeginningPage"
-             Title="BeginningPage">
+             Title="BeginningPage"
+             BackgroundColor="Black">
 
-    <ContentPage.Background>
-        <LinearGradientBrush StartPoint="0,1" EndPoint="0,0">
-            <GradientStop Color="#000000" Offset="1.0" />
-            <GradientStop Color="#0000b3" Offset="0.0" />
-        </LinearGradientBrush>
-    </ContentPage.Background>
 
     <Grid>
 
@@ -17,14 +12,49 @@
         <Image
             x:Name="UndyneFrontpage"
             Opacity="100"
-            Source="undynefrontpage.png"
+            Source="undynefrontpage.jpg"
             VerticalOptions="Start"
             HorizontalOptions="Center"
             TranslationX="-48"
             TranslationY="148"
             WidthRequest="96"
             HeightRequest="96"/>
-        
+
+        <Image
+            x:Name="asgorefrontpage"
+            Opacity="100"
+            Source="azgorefrontpage.png"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            TranslationX="-700"
+            TranslationY="140"
+            WidthRequest="500"
+            HeightRequest="400"/>
+
+        <Image
+            x:Name="frontpagebanner"
+            Opacity="100"
+            Source="frontpagebanner.png"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            TranslationX="0"
+            TranslationY="-150"
+            WidthRequest="600"
+            HeightRequest="600"/>
+
+        <Image
+            x:Name="torielfrontpage"
+            Opacity="100"
+            Source="torielfrontpage.png"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            TranslationX="600"
+            TranslationY="80"
+            WidthRequest="600"
+            HeightRequest="600"/>
+
+
+
         <VerticalStackLayout>
             <Button
                     Style="{StaticResource ButtonStyle}"

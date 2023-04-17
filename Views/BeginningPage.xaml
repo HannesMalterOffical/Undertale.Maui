@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Views.BeginningPage"
+             Title="BeginningPage">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="0,0">
+            <GradientStop Color="#000000" Offset="1.0" />
+            <GradientStop Color="#0000b3" Offset="0.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid>
+
+        <!--Front Page characters-->
+        <Image
+            x:Name="UndyneFrontpage"
+            Opacity="100"
+            Source="undynefrontpage.png"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            TranslationX="-48"
+            TranslationY="148"
+            WidthRequest="96"
+            HeightRequest="96"/>
+        
+        <VerticalStackLayout>
+            <Button
+                    Style="{StaticResource ButtonStyle}"
+                    Text="Explore Now"
+                    HorizontalOptions="Center"
+                    Margin="0,12,0,6"
+                    Clicked="ExploreNow_Clicked"/>
+        </VerticalStackLayout> 
+    </Grid>
+</ContentPage>

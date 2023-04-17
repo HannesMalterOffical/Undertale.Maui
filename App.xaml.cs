@@ -1,4 +1,6 @@
-﻿namespace Undertale.Maui;
+﻿using Views;
+
+namespace Undertale.Maui;
 
 public partial class App : Application
 {
@@ -6,6 +8,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new AppShell();
-	}
+        MainPage = new NavigationPage(new BeginningPage());
+    }
 }

@@ -29,6 +29,7 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+		<BaseOutputPath></BaseOutputPath>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -47,6 +48,27 @@
 
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Images\azgorefrontpage.png" />
+	  <None Remove="Resources\Images\frontpagebanner.png" />
+	  <None Remove="Resources\Images\Sans_undertale.jpg" />
+	  <None Remove="Resources\Images\torielfrontpage.png" />
+	  <None Remove="Resources\Images\undynefrontpage.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.UI.Xaml" Version="2.8.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\BeginningPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\SearchPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

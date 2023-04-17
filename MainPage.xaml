@@ -10,28 +10,28 @@
             VerticalOptions="Center">
 
             <Image
-                Source="dotnet_bot.png"
+                Source="sans_undertale.jpg"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Hello, World!"
+                Text="Welcome to the Undertale Guide!"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Welcome to .NET Multi-platform App UI"
+                Text="Find myriad information in this guide"
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                SemanticProperties.Description="Find myriad information in this guide"
                 FontSize="18"
                 HorizontalOptions="Center" />
 
             <Button
                 x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
+                Text="Enter the Guide"
+                SemanticProperties.Hint="Enters into the Secondary page"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 

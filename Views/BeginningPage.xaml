@@ -103,7 +103,7 @@
             VerticalOptions="Center">
 
             <Button
-                    Style="{StaticResource ButtonStyle}"
+                    Style="{StaticResource FrontPageButtonStyle}"
                     Text="Welcome To the Underground"
                     HorizontalOptions="Center"
                     Margin="0,12,0,6"

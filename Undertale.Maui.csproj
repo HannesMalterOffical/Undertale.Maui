@@ -51,10 +51,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\DTM-Mono.ttf" />
+	  <None Remove="Resources\Fonts\DTM-Sans.ttf" />
 	  <None Remove="Resources\Images\azgorefrontpage.png" />
-	  <None Remove="Resources\Images\frontpagebanner.png" />
+	  <None Remove="Resources\Images\frontpageriver.PNG" />
+	  <None Remove="Resources\Images\frontpagetree.png" />
+	  <None Remove="Resources\Images\papyrusfrontpage.jpg" />
 	  <None Remove="Resources\Images\Sans_undertale.jpg" />
 	  <None Remove="Resources\Images\torielfrontpage.png" />
+	  <None Remove="Resources\Images\undertalebanner.png" />
+	  <None Remove="Resources\Images\undertalesansfrontpage.jpg" />
 	  <None Remove="Resources\Images\undynefrontpage.jpg" />
 	</ItemGroup>
 

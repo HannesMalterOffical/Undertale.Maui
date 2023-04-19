@@ -11,8 +11,8 @@ public static class MauiProgram
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-                fonts.AddFont("DTM-Mono.ttf", "UnderTaleMono");
-                fonts.AddFont("DTM-Sans.ttf", "UnderTaleSans");
+                fonts.AddFont("MonsterFriendBack.otf", "UnterTaleBack");
+                fonts.AddFont("MonsterFriendFore.otf", "UnterTaleFore");
             });
 
 		return builder.Build();

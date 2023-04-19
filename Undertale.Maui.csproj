@@ -51,9 +51,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Fonts\DTM-Mono.ttf" />
-	  <None Remove="Resources\Fonts\DTM-Sans.ttf" />
+	  <None Remove="Resources\Fonts\MonsterFriendBack.otf" />
+	  <None Remove="Resources\Fonts\MonsterFriendFore.otf" />
 	  <None Remove="Resources\Images\azgorefrontpage.png" />
+	  <None Remove="Resources\Images\frontpageguidebanner.png" />
 	  <None Remove="Resources\Images\frontpageriver.PNG" />
 	  <None Remove="Resources\Images\frontpagetree.png" />
 	  <None Remove="Resources\Images\papyrusfrontpage.jpg" />

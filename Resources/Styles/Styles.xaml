@@ -10,7 +10,7 @@
         <Setter Property="HeightRequest" Value="52" />
         <Setter Property="Padding" Value="0,0" />
         <Setter Property="TextColor" Value="black" />
-        <Setter Property="FontFamily" Value="UnderTaleMono" />
+        <Setter Property="FontFamily" Value="UnterTaleFore" />
         <Setter Property="BackgroundColor" Value="#71efff" />
         <Setter Property="BorderWidth" Value="3" />
         <Setter Property="BorderColor" Value="AliceBlue" />

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
+
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Views.BeginningPage"
@@ -9,16 +10,6 @@
     <Grid>
 
         <!--Front Page characters-->
-        <Image
-            x:Name="UndyneFronpage"
-            Opacity="100"
-            Source="undynefrontpage.jpg"
-            VerticalOptions="Start"
-            HorizontalOptions="Center"
-            TranslationX="-750"
-            TranslationY="140"
-            WidthRequest="500"
-            HeightRequest="200"/>
 
         <Image
             x:Name="asgorefrontpage"
@@ -26,21 +17,21 @@
             Source="azgorefrontpage.png"
             VerticalOptions="Start"
             HorizontalOptions="Center"
-            TranslationX="-700"
-            TranslationY="140"
-            WidthRequest="500"
-            HeightRequest="400"/>
+            TranslationX="-100"
+            TranslationY="90"
+            WidthRequest="300"
+            HeightRequest="300"/>
 
         <Image
             x:Name="frontpagebanner"
             Opacity="100"
-            Source="undertalebanner.png"
+            Source="frontpageguidebanner.png"
             VerticalOptions="Start"
             HorizontalOptions="Center"
             TranslationX="0"
-            TranslationY="-0"
-            WidthRequest="1000"
-            HeightRequest="580"/>
+            TranslationY="-130"
+            WidthRequest="300"
+            HeightRequest="300"/>
 
         <Image
             x:Name="torielfrontpage"
@@ -48,10 +39,10 @@
             Source="torielfrontpage.png"
             VerticalOptions="Start"
             HorizontalOptions="Center"
-            TranslationX="670"
-            TranslationY="80"
-            WidthRequest="600"
-            HeightRequest="600"/>
+            TranslationX="120"
+            TranslationY="100"
+            WidthRequest="300"
+            HeightRequest="300"/>
 
         <Image
             x:Name="treefrontpage1"
@@ -106,7 +97,7 @@
             TranslationX="0"
             TranslationY="310"
             WidthRequest="400"
-            HeightRequest="650"/>
+            HeightRequest="750"/>
 
         <VerticalStackLayout
             VerticalOptions="Center">

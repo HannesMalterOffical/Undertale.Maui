@@ -10,15 +10,15 @@
 
         <!--Front Page characters-->
         <Image
-            x:Name="UndyneFrontpage"
+            x:Name="UndyneFronpage"
             Opacity="100"
             Source="undynefrontpage.jpg"
             VerticalOptions="Start"
             HorizontalOptions="Center"
-            TranslationX="-48"
-            TranslationY="148"
-            WidthRequest="96"
-            HeightRequest="96"/>
+            TranslationX="-750"
+            TranslationY="140"
+            WidthRequest="500"
+            HeightRequest="200"/>
 
         <Image
             x:Name="asgorefrontpage"
@@ -34,13 +34,13 @@
         <Image
             x:Name="frontpagebanner"
             Opacity="100"
-            Source="frontpagebanner.png"
+            Source="undertalebanner.png"
             VerticalOptions="Start"
             HorizontalOptions="Center"
             TranslationX="0"
-            TranslationY="-150"
-            WidthRequest="600"
-            HeightRequest="600"/>
+            TranslationY="-0"
+            WidthRequest="1000"
+            HeightRequest="580"/>
 
         <Image
             x:Name="torielfrontpage"
@@ -48,20 +48,77 @@
             Source="torielfrontpage.png"
             VerticalOptions="Start"
             HorizontalOptions="Center"
-            TranslationX="600"
+            TranslationX="670"
             TranslationY="80"
             WidthRequest="600"
             HeightRequest="600"/>
 
+        <Image
+            x:Name="treefrontpage1"
+            Opacity="100"
+            Source="frontpagetree.png"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            TranslationX="320"
+            TranslationY="350"
+            WidthRequest="200"
+            HeightRequest="200"/>
 
+        <Image
+            x:Name="treefrontpage2"
+            Opacity="100"
+            Source="frontpagetree.png"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            TranslationX="-320"
+            TranslationY="350"
+            WidthRequest="200"
+            HeightRequest="200"/>
 
-        <VerticalStackLayout>
+        <Image
+            x:Name="SansFrontPage"
+            Opacity="100"
+            Source="undertalesansfrontpage.jpg"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            TranslationX="670"
+            TranslationY="540"
+            WidthRequest="500"
+            HeightRequest="200"/>
+
+        <Image
+            x:Name="PapyruFrontPage"
+            Opacity="100"
+            Source="papyrusfrontpage.jpg"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            TranslationX="-700"
+            TranslationY="540"
+            WidthRequest="500"
+            HeightRequest="200"/>
+
+        <Image
+            x:Name="FrontPageRiver"
+            Opacity="100"
+            Source="frontpageriver.png"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            TranslationX="0"
+            TranslationY="310"
+            WidthRequest="400"
+            HeightRequest="650"/>
+
+        <VerticalStackLayout
+            VerticalOptions="Center">
+
             <Button
                     Style="{StaticResource ButtonStyle}"
-                    Text="Explore Now"
+                    Text="Welcome To the Underground"
                     HorizontalOptions="Center"
                     Margin="0,12,0,6"
                     Clicked="ExploreNow_Clicked"/>
-        </VerticalStackLayout> 
+        </VerticalStackLayout>
+
+     
     </Grid>
 </ContentPage>

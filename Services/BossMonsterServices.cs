@@ -2,7 +2,7 @@
 {
     internal class BossMonsterServices
     {
-        private static List<BossMonsters> bossmonsters = new()
+        public static List<BossMonsters> bossmonsters = new()
         {
             new()
             {

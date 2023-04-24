@@ -88,8 +88,8 @@
                     <CollectionView
                         x:Name="lstAllPlanets"
                         HeightRequest="160"
-                        SelectionMode="Single"
-                        SelectionChanged="Planets_SelectionChanged">
+                        SelectionMode="Single">
+                        <!--SelectionChanged="Planets_SelectionChanged"> -->
 
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout
@@ -98,8 +98,8 @@
                         </CollectionView.ItemsLayout>
 
                         <CollectionView.ItemTemplate>
-                            <DataTemplate
-                                x:DataType="Models:Monsters">
+                            <DataTemplate>
+                                <!--:DataType="Models:Monsters"> -->
                                 <Border
                                     VerticalOptions="Fill"
                                     WidthRequest="140"

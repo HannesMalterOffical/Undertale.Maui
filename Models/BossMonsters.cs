@@ -1,6 +1,6 @@
 ﻿namespace Undertale.Maui.Models
 {
-    internal class BossMonsters
+    public class BossMonsters
     {
         public string BossName { get; set; }
         public string BossQuote { get; set; }

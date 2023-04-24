@@ -6,11 +6,11 @@
 
     <!--Button Style-->
     <Style TargetType="Button" x:Key="FrontPageButtonStyle">
-        <Setter Property="FontSize" Value="22" />
-        <Setter Property="HeightRequest" Value="52" />
+        <Setter Property="FontSize" Value="13" />
+        <Setter Property="HeightRequest" Value="50" />
         <Setter Property="Padding" Value="0,0" />
         <Setter Property="TextColor" Value="black" />
-        <Setter Property="FontFamily" Value="UnterTaleFore" />
+        <Setter Property="FontFamily" Value="MonsterFriendFore" />
         <Setter Property="BackgroundColor" Value="#71efff" />
         <Setter Property="BorderWidth" Value="3" />
         <Setter Property="BorderColor" Value="AliceBlue" />
@@ -43,7 +43,8 @@
         <Setter Property="FontSize" Value="14" />
         <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
     </Style>
-    
-    
+
+
+
 
 </ResourceDictionary>

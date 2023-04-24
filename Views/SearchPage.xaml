@@ -86,10 +86,10 @@
                     </Border>
 
                     <CollectionView
-                        x:Name="lstAllPlanets"
+                        x:Name="ViewMonsters"
                         HeightRequest="160"
                         SelectionMode="Single"
-                        SelectionChanged="Planets_SelectionChanged">
+                        SelectionChanged="Characters_SelectionChanged">
 
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout
@@ -98,8 +98,8 @@
                         </CollectionView.ItemsLayout>
 
                         <CollectionView.ItemTemplate>
-                            <DataTemplate
-                                x:DataType="Models:Monsters">
+                            <DataTemplate>
+                                <!--x:DataType="Models : Monsters"-->
                                 <Border
                                     VerticalOptions="Fill"
                                     WidthRequest="140"

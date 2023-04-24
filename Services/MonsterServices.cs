@@ -76,5 +76,8 @@
 
         };
 
+        public static List<Monsters> GetAllMonsters()
+            => monsters;
+
     }
 }

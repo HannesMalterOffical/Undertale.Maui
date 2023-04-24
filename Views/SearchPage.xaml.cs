@@ -12,13 +12,14 @@ public partial class SearchPage : ContentPage
 	{
 		base.OnAppearing();
 
+        ViewMonsters.ItemsSource = Monsters.GetAllMonsters();
+        ViewBossMonsters.ItemsSource = BossMonsters.GetAllBossMonsters();
+    }
 
-	}
-
-    //async void Characters_SelectionChanged(System.Object sender, Microsoft.Maui.Controls.SelectionChangedEventArgs e)
-    //{
-    //    await Navigation.PushAsync(new EndPage(e.CurrentSelection.First() as Monsters));
-    //}
+    async void Characters_SelectionChanged(System.Object sender, Microsoft.Maui.Controls.SelectionChangedEventArgs e)
+    {
+        await Navigation.PushAsync(new EndPage(e.CurrentSelection.First() as Monsters));
+    }
 
 
     async void GridArea_Tapped(System.Object sender, System.EventArgs e)

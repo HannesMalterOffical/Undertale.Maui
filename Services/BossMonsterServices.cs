@@ -1,4 +1,6 @@
-﻿namespace Undertale.Maui.Services
+﻿using Undertale.Maui.Models;
+
+namespace Undertale.Maui.Services
 {
     internal class BossMonsterServices
     {
@@ -75,5 +77,8 @@
             },
 
         };
+
+        public static List<BossMonsters> GetAllBossMonsters()
+            => bossmonsters;
     }
 }

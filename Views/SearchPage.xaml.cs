@@ -12,8 +12,6 @@ public partial class SearchPage : ContentPage
 
     protected override void OnAppearing()
     {
-        base.OnAppearing();
-
         AllMonsterLst.ItemsSource = MonsterServices.GetAllMonsters();
     }
 
@@ -23,14 +21,9 @@ public partial class SearchPage : ContentPage
     }
 
 
-    async void ApiPic_Clicked(System.Object sender, System.EventArgs e)
-    {
-
-    }
-
-
     async void GridArea_Tapped(System.Object sender, System.EventArgs e)
     {
 
     }
+
 }

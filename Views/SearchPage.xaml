@@ -89,7 +89,7 @@
                     <!--List of all monsters-->
                     <CollectionView
                         x:Name="AllMonsterLst"
-                        HeightRequest="160"
+                        HeightRequest="600"
                         SelectionMode="Single"
                         SelectionChanged="Characters_SelectionChanged">
 
@@ -101,7 +101,7 @@
 
                         <CollectionView.ItemTemplate>
                             <DataTemplate
-                                x:DataType="Models:Monsters">
+                                x:DataType="models:Monsters">
                                 <Border
                                     VerticalOptions="Fill"
                                     WidthRequest="140"
@@ -120,7 +120,7 @@
                                         <Image
                                             Grid.Row="0"
                                             Source="{Binding CharacterImage}"
-                                            Rotation="-30"
+                                            Rotation="0"
                                             Aspect="AspectFit"                                        
                                             VerticalOptions="Fill"
                                             HorizontalOptions="Fill"/>
@@ -129,6 +129,61 @@
                                             Grid.Row="1"
                                             Style="{StaticResource AllPlanetHeaderStyle}"
                                             Text="{Binding Name}"
+                                            Margin="0,4,0,0"/>
+
+                                    </Grid>
+
+                                </Border>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+
+                    </CollectionView>
+
+                    <!--List of all Boss monsters-->
+                    <CollectionView
+                        x:Name="AllBossMonsterLst"
+                        HeightRequest="600"
+                        SelectionMode="Single"
+                        SelectionChanged="Characters_SelectionChanged">
+                        
+                        
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout
+                                Orientation="Vertical"
+                                ItemSpacing="16" />
+                        </CollectionView.ItemsLayout>
+
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate
+                                x:DataType="models:BossMonsters">
+                                <Border
+                                    VerticalOptions="Center"
+                                    WidthRequest="140"
+                                    StrokeThickness="0"
+                                    Background=" #a12"
+                                    Padding="16">
+                                    
+
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="16"/>
+                                    </Border.StrokeShape>
+
+                                    <Grid
+                                        RowDefinitions="*,Auto,Auto"
+                                        RowSpacing="4">
+
+                                        <Image
+                                            Grid.Row="0"
+                                            Source="{Binding CharacterImage}"
+                                            Rotation="0"
+                                            Aspect="AspectFit"                                        
+                                            VerticalOptions="Fill"
+                                            HorizontalOptions="Fill"/>
+
+                                        <Label
+                                            Grid.Row="1"
+                                            Style="{StaticResource AllPlanetHeaderStyle}"
+                                            Text="{Binding BossName}"
                                             Margin="0,4,0,0"/>
 
                                     </Grid>

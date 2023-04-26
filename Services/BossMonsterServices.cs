@@ -1,6 +1,6 @@
 ﻿namespace Undertale.Maui.Services
 {
-    internal class BossMonsterServices
+    public class BossMonsterServices
     {
         public static List<BossMonsters> bossmonsters = new()
         {

@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:src="clr-namespace:Undertale.Maui;assembly=Undertale.Maui"
+             xmlns:models="clr-namespace:Undertale.Maui.Models"
              x:Class="Views.SearchPage"
              Title="SearchPage"
              BackgroundColor="Black">
 
     <Grid>
         <Grid
-            x:Name="MenuContainer"
-            IgnoreSafeArea="{OnPlatform Android=False,iOS=True}">
+            x:Name="MenuContainer">
 
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="GridArea_Tapped"/>
             </Grid.GestureRecognizers>
 
+            
         </Grid>
 
         <Grid
@@ -44,15 +46,15 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
                 HorizontalScrollBarVisibility="Never"
-                VerticalScrollBarVisibility="Never"
+                VerticalScrollBarVisibility="Always"
                 Margin="0,32,-24,0">
 
                 <VerticalStackLayout
                     Spacing="12">
-
+                    <!--Searchy mc searchy bar-->
                     <Border
                         Padding="12,4"
-                        BackgroundColor="#33CCCCCC"
+                        BackgroundColor="AliceBlue"
                         Stroke="{StaticResource BorderColor}"
                         HorizontalOptions="Fill"
                         Margin="0,0,24,0"
@@ -60,7 +62,7 @@
                         <Border.StrokeShape>
                             <RoundRectangle CornerRadius="6"/>
                         </Border.StrokeShape>
-                        
+
                         <Grid
                             HorizontalOptions="Fill"
                             VerticalOptions="Center"
@@ -82,29 +84,29 @@
                                 Style="{StaticResource MenuLabelStyle}" />
 
                         </Grid>
-
                     </Border>
 
+                    <!--List of all monsters-->
                     <CollectionView
-                        x:Name="ViewMonsters"
+                        x:Name="AllMonsterLst"
                         HeightRequest="160"
                         SelectionMode="Single"
                         SelectionChanged="Characters_SelectionChanged">
 
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout
-                                Orientation="Horizontal"
+                                Orientation="Vertical"
                                 ItemSpacing="16" />
                         </CollectionView.ItemsLayout>
 
                         <CollectionView.ItemTemplate>
-                            <DataTemplate>
-                                <!--x:DataType="Models : Monsters"-->
+                            <DataTemplate
+                                x:DataType="Models:Monsters">
                                 <Border
                                     VerticalOptions="Fill"
                                     WidthRequest="140"
                                     StrokeThickness="0"
-                                    Background="{Binding Background}"
+                                    Background=" #a12"
                                     Padding="16">
 
                                     <Border.StrokeShape>
@@ -117,7 +119,7 @@
 
                                         <Image
                                             Grid.Row="0"
-                                            Source="{Binding HeroImage}"
+                                            Source="{Binding CharacterImage}"
                                             Rotation="-30"
                                             Aspect="AspectFit"                                        
                                             VerticalOptions="Fill"

@@ -1,6 +1,6 @@
 ﻿namespace Undertale.Maui.Services
 {
-    internal class MonsterServices
+    public class MonsterServices
     {
         public static List<Monsters> monsters = new()
         {
@@ -75,6 +75,8 @@
             },
 
         };
+        public static List<Monsters> GetAllMonsters()
+            => monsters;
 
         public static List<Monsters> GetAllMonsters()
             => monsters;

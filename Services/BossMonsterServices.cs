@@ -1,4 +1,6 @@
-﻿namespace Undertale.Maui.Services
+﻿using Undertale.Maui.Models;
+
+namespace Undertale.Maui.Services
 {
     public class BossMonsterServices
     {
@@ -6,7 +8,7 @@
         {
             new()
             {
-                BossName = "Sans",
+                BossName = "  Sans",
                 BossQuote = "i'm sans.sans the skeleton.",
                 CharacterImage = "Sans.png",
                 Description = "The easiest enemy. Can only deal 1 damage.",
@@ -20,7 +22,7 @@
 
             new()
             {
-                BossName = "Papyrus",
+                BossName = "  Papyrus",
                 BossQuote = "I WILL BE THE ONE! I MUST BE THE ONE! I WILL CAPTURE A HUMAN! THEN, I, THE GREAT PAPYRUS... WILL GET ALL THE THINGS I UTTERLY DESERVE!",
                 CharacterImage = "Papyrus.png",
                 Description = "He likes to say: Nyeh heh heh!",
@@ -34,7 +36,7 @@
 
             new()
             {
-                BossName = "Undyne",
+                BossName = "  Undyne",
                 BossQuote = "SCREW IT! WHY SHOULD I TELL THAT STORY WHEN YOU'RE ABOUT TO DIE!?! NGAAAAAHHHHHHHHHHHHHHHH!",
                 CharacterImage = "Undyne.png",
                 Description = "The heroine that NEVER gives up.",
@@ -48,7 +50,7 @@
 
             new()
             {
-                BossName = "Asgore",
+                BossName = "  Asgore",
                 BossQuote = "Human... It was nice to meet you. Goodbye.",
                 CharacterImage = "Asgore.png",
                 Description = "The king of the underground.",
@@ -62,7 +64,7 @@
 
             new()
             {
-                BossName = "Toriel",
+                BossName = "  Toriel",
                 BossQuote = "I am TORIEL, caretaker of the RUINS.",
                 CharacterImage = "Toriel.png",
                 Description = "Knows best for you.",
@@ -75,5 +77,8 @@
             },
 
         };
+
+        public static List<BossMonsters> GetAllBossMonsters()
+            => bossmonsters;
     }
 }

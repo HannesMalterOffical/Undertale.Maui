@@ -53,28 +53,22 @@
 
                 <!--Monster Name-->
                 <Label
-                    Margin="0,-24,0,0"
-                    Style="{StaticResource AllMonsterHeaderSubtitleStyle}"
+                    Margin="0,0,0,0"
+                    TextColor="White"
                     Text="{Binding Name}" />
 
                 <!--Monster Subtitle-->
                 <Label
-                    Margin="0,-12,0,0"
-                    Style="{StaticResource MonsterHeaderSubtitleStyle}"
+                    Margin="0,0,0,0"
+                    TextColor="White"
                     Text="{Binding Quote}" />
-
-                <!--Divider-->
-                <Rectangle
-                    HorizontalOptions="Fill"
-                    HeightRequest="2"
-                    Stroke="Transparent"
-                    Fill="{StaticResource LightBorderColor}" />
 
                 <!--Monster info-->
                 <Label
                     Style="{StaticResource MonsterDetailsTextStyle}"
                     LineBreakMode="WordWrap"
-                    Text="{Binding Description}" />
+                    Text="{Binding Description}"
+                    TextColor="White"/>
 
                 <!--Divider-->
                 <Rectangle
@@ -121,26 +115,7 @@
                     
 
                 </CollectionView>
-                <Label
-                                            Grid.Row="1"
-                                            TextColor="White"
-                                            Text="{Binding Name}"
-                                            Margin="0,4,0,0"/>
-                <Label
-                                            Grid.Row="1"
-                                            TextColor="White"
-                                            Text="{Binding Quote}"
-                                            Margin="0,4,0,0"/>
-                <Label
-                                            Grid.Row="1"
-                                            TextColor="White"
-                                            Text="{Binding Description}"
-                                            Margin="0,4,0,0"/>
-                <Label
-                                            Grid.Row="1"
-                                            TextColor="White"
-                                            Text="{Binding Image}"
-                                            Margin="0,4,0,0"/>
+
 
 
 

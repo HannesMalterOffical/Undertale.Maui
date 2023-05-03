@@ -14,11 +14,12 @@
         <ImageButton
             WidthRequest="24"
             HeightRequest="24"
-            Source="imgback.png"
+            Source="backarrow.png"
             Grid.Row="0"
             Grid.Column="0"
             HorizontalOptions="Start"
             VerticalOptions="Center"
+            Clicked="BackButton_Clicked"
              />
 
         <ImageButton
@@ -117,10 +118,35 @@
                             </Image>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
+                    
 
                 </CollectionView>
+                <Label
+                                            Grid.Row="1"
+                                            TextColor="White"
+                                            Text="{Binding Name}"
+                                            Margin="0,4,0,0"/>
+                <Label
+                                            Grid.Row="1"
+                                            TextColor="White"
+                                            Text="{Binding Quote}"
+                                            Margin="0,4,0,0"/>
+                <Label
+                                            Grid.Row="1"
+                                            TextColor="White"
+                                            Text="{Binding Description}"
+                                            Margin="0,4,0,0"/>
+                <Label
+                                            Grid.Row="1"
+                                            TextColor="White"
+                                            Text="{Binding Image}"
+                                            Margin="0,4,0,0"/>
+
+
 
             </VerticalStackLayout>
+            
+            
 
         </ScrollView>
 

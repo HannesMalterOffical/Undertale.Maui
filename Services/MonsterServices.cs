@@ -78,8 +78,5 @@
         public static List<Monsters> GetAllMonsters()
             => monsters;
 
-        public static List<Monsters> GetAllMonsters()
-            => monsters;
-
     }
 }

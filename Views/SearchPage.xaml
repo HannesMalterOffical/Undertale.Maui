@@ -4,6 +4,7 @@
              xmlns:src="clr-namespace:Undertale.Maui;assembly=Undertale.Maui"
              xmlns:models="clr-namespace:Undertale.Maui.Models"
              x:Class="Views.SearchPage"
+             xmlns:model="clr-namespace:Undertale.Maui.Models"
              Title="SearchPage"
              BackgroundColor="Black">
 
@@ -91,7 +92,7 @@
                         x:Name="AllMonsterLst"
                         HeightRequest="600"
                         SelectionMode="Single"
-                        SelectionChanged="Characters_SelectionChanged">
+                        SelectionChanged="Planets_SelectionChanged">
 
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout
@@ -106,8 +107,8 @@
                                     VerticalOptions="Fill"
                                     WidthRequest="120"
                                     StrokeThickness="0"
-                                    Background=" #a12351"
-                                    Padding="20">
+                                    Background="{Binding Background}"
+                                    Padding="16">
 
                                     <Border.StrokeShape>
                                         <RoundRectangle CornerRadius="16"/>
@@ -120,6 +121,7 @@
                                         <Image
                                             Grid.Row="0"
                                             Source="{Binding CharacterImage}"
+                                            Rotation="0"
                                             Aspect="AspectFit"                                        
                                             VerticalOptions="Fill"
                                             HorizontalOptions="Fill"/>
@@ -132,6 +134,61 @@
                                             Margin="0,4,0,0"/>
                                         
 
+
+                                    </Grid>
+
+                                </Border>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+
+                    </CollectionView>
+
+                    <!--List of all Boss monsters-->
+                    <CollectionView
+                        x:Name="AllBossMonsterLst"
+                        HeightRequest="600"
+                        SelectionMode="Single"
+                        SelectionChanged="Characters_SelectionChanged">
+                        
+                        
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout
+                                Orientation="Vertical"
+                                ItemSpacing="16" />
+                        </CollectionView.ItemsLayout>
+
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate
+                                x:DataType="models:BossMonsters">
+                                <Border
+                                    VerticalOptions="Center"
+                                    WidthRequest="140"
+                                    StrokeThickness="0"
+                                    Background=" #a12"
+                                    Padding="16">
+                                    
+
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="16"/>
+                                    </Border.StrokeShape>
+
+                                    <Grid
+                                        RowDefinitions="*,Auto,Auto"
+                                        RowSpacing="4">
+
+                                        <Image
+                                            Grid.Row="0"
+                                            Source="{Binding CharacterImage}"
+                                            Rotation="0"
+                                            Aspect="AspectFit"                                        
+                                            VerticalOptions="Fill"
+                                            HorizontalOptions="Fill"/>
+
+                                        <Label
+                                            Grid.Row="1"
+                                            Style="{StaticResource AllPlanetHeaderStyle}"
+                                            Text="{Binding BossName}"
+                                            Margin="0,4,0,0"/>
 
                                     </Grid>
 

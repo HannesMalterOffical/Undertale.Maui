@@ -12,10 +12,6 @@
                 Description = "Life is difficult for this enemy.",
                 AccentColorStart = Color.FromArgb("#000000"),
                 AccentColorEnd = Color.FromArgb("#000000"),
-                Images = new()
-                {
-                    "https://art.pixilart.com/07ac2ccbd10ccf1.png"
-                }
             },
 
             new()
@@ -26,10 +22,7 @@
                 Description = "This monster is too sensitive to fight...",
                 AccentColorStart = Color.FromArgb("#000000"),
                 AccentColorEnd = Color.FromArgb("#000000"),
-                Images = new()
-                {
-                    "https://static.wikia.nocookie.net/topstrongest/images/c/c4/Whimsalot_Sprite.png/revision/latest?cb=20210909180226"
-                }
+
             },
 
             new()
@@ -40,10 +33,7 @@
                 Description = "Stereotypical: Curvaceously attractive, but no brains...",
                 AccentColorStart = Color.FromArgb("#000000"),
                 AccentColorEnd = Color.FromArgb("#000000"),
-                Images = new()
-                {
-                    "https://static.wikia.nocookie.net/deltatraveler/images/f/f6/Moldsmal.png/revision/latest?cb=20230107010958"
-                }
+
             },
 
             new()
@@ -54,10 +44,7 @@
                 Description = "Don't pick on him. Family name: Eyewalker.",
                 AccentColorStart = Color.FromArgb("#000000"),
                 AccentColorEnd = Color.FromArgb("#000000"),
-                Images = new()
-                {
-                    "https://static.wikia.nocookie.net/topstrongest/images/d/d6/Loox_Sprite.png/revision/latest?cb=20210909095051"
-                }
+
             },
 
             new()
@@ -68,10 +55,6 @@
                 Description = "Serving Size: 1 Monster. Not monitored by the USDA.",
                 AccentColorStart = Color.FromArgb("#000000"),
                 AccentColorEnd = Color.FromArgb("#000000"),
-                Images = new()
-                {
-                    "https://static.wikia.nocookie.net/undertale/images/4/48/Vegetoid_artwork_Squashy.png/revision/latest?cb=20210319063914"
-                }
             },
 
         };

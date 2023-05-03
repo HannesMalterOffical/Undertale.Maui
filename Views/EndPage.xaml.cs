@@ -1,5 +1,3 @@
-
-
 namespace Views;
 
 public partial class EndPage : ContentPage

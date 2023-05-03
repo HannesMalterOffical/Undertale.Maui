@@ -27,4 +27,6 @@ public partial class SearchPage : ContentPage
     {
 
     }
+
+    
 }

@@ -92,7 +92,7 @@
                         x:Name="AllMonsterLst"
                         HeightRequest="600"
                         SelectionMode="Single"
-                        SelectionChanged="Planets_SelectionChanged">
+                        SelectionChanged="Characters_SelectionChanged">
 
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout
@@ -102,12 +102,13 @@
 
                         <CollectionView.ItemTemplate>
                             <DataTemplate
-                                x:DataType="Models:Monsters">
+                                x:DataType="models:Monsters">
                                 <Border
                                     VerticalOptions="Fill"
                                     WidthRequest="120"
                                     StrokeThickness="0"
-                                    Background="{Binding Background}"
+                                    Background="#a12
+                                    "
                                     Padding="16">
 
                                     <Border.StrokeShape>

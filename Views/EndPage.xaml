@@ -14,11 +14,12 @@
         <ImageButton
             WidthRequest="24"
             HeightRequest="24"
-            Source="imgback.png"
+            Source="backarrow.png"
             Grid.Row="0"
             Grid.Column="0"
             HorizontalOptions="Start"
             VerticalOptions="Center"
+            Clicked="BackButton_Clicked"
              />
 
         <ImageButton
@@ -52,28 +53,22 @@
 
                 <!--Monster Name-->
                 <Label
-                    Margin="0,-24,0,0"
-                    Style="{StaticResource AllMonsterHeaderSubtitleStyle}"
+                    Margin="0,0,0,0"
+                    TextColor="White"
                     Text="{Binding Name}" />
 
                 <!--Monster Subtitle-->
                 <Label
-                    Margin="0,-12,0,0"
-                    Style="{StaticResource MonsterHeaderSubtitleStyle}"
+                    Margin="0,0,0,0"
+                    TextColor="White"
                     Text="{Binding Quote}" />
-
-                <!--Divider-->
-                <Rectangle
-                    HorizontalOptions="Fill"
-                    HeightRequest="2"
-                    Stroke="Transparent"
-                    Fill="{StaticResource LightBorderColor}" />
 
                 <!--Monster info-->
                 <Label
                     Style="{StaticResource MonsterDetailsTextStyle}"
                     LineBreakMode="WordWrap"
-                    Text="{Binding Description}" />
+                    Text="{Binding Description}"
+                    TextColor="White"/>
 
                 <!--Divider-->
                 <Rectangle
@@ -117,10 +112,16 @@
                             </Image>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
+                    
 
                 </CollectionView>
 
+
+
+
             </VerticalStackLayout>
+            
+            
 
         </ScrollView>
 

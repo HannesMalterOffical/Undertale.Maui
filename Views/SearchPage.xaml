@@ -4,10 +4,22 @@
              xmlns:src="clr-namespace:Undertale.Maui;assembly=Undertale.Maui"
              xmlns:models="clr-namespace:Undertale.Maui.Models"
              x:Class="Views.SearchPage"
+             xmlns:model="clr-namespace:Undertale.Maui.Models"
              Title="SearchPage"
              BackgroundColor="Black">
+    
+            
 
     <Grid>
+        <Line
+                X1="190" Y1="10"
+                X2="190" Y2="800"
+                Stroke="White"
+                StrokeThickness="2"
+                TranslationX="160"
+                TranslationY="100"/>
+
+
         <Grid
             x:Name="MenuContainer">
 
@@ -15,12 +27,14 @@
                 <TapGestureRecognizer Tapped="GridArea_Tapped"/>
             </Grid.GestureRecognizers>
 
-            
+          
         </Grid>
+
+        
 
         <Grid
             x:Name="MainContentGrid"
-            Padding="24,52,24,0"
+            Padding="24,-10,24,0"
             BackgroundColor="{StaticResource PageBackgroundColor}"
             ColumnDefinitions="*,Auto"
             RowDefinitions="Auto,*">
@@ -62,7 +76,7 @@
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout
                                 Orientation="Vertical"
-                                ItemSpacing="16" />
+                                ItemSpacing="12" />
                         </CollectionView.ItemsLayout>
 
                         <CollectionView.ItemTemplate>
@@ -70,7 +84,7 @@
                                 x:DataType="models:Monsters">
                                 <Border
                                     VerticalOptions="Fill"
-                                    WidthRequest="140"
+                                    WidthRequest="120"
                                     StrokeThickness="0"
                                     Background=" #a12"
                                     Padding="26">
@@ -95,7 +109,10 @@
                                             Grid.Row="1"
                                             Style="{StaticResource AllPlanetHeaderStyle}"
                                             Text="{Binding Name}"
+                                            TextColor="White"
                                             Margin="0,4,0,0"/>
+                                        
+
 
                                     </Grid>
 
@@ -110,7 +127,9 @@
                         x:Name="AllBossMonsterLst"
                         HeightRequest="600"
                         SelectionMode="Single"
-                        SelectionChanged="Characters_SelectionChanged">
+                        SelectionChanged="Characters_SelectionChanged"
+                        TranslationX="155"
+                        TranslationY="-615">
                         
                         
                         <CollectionView.ItemsLayout>
@@ -150,6 +169,7 @@
                                             Grid.Row="1"
                                             Style="{StaticResource AllPlanetHeaderStyle}"
                                             Text="{Binding BossName}"
+                                            TextColor="White"
                                             Margin="0,4,0,0"/>
 
                                     </Grid>
@@ -165,6 +185,7 @@
             </ScrollView>
             
         </Grid>
+
     </Grid>
     
 

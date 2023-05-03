@@ -64,6 +64,7 @@
 	  <None Remove="Resources\Images\undertalebanner.png" />
 	  <None Remove="Resources\Images\undertalesansfrontpage.jpg" />
 	  <None Remove="Resources\Images\undynefrontpage.jpg" />
+	  <None Remove="Resources\Images\whiteline.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -21,23 +21,6 @@ public partial class SearchPage : ContentPage
         await Navigation.PushAsync(new EndPage(e.CurrentSelection.First() as Monsters));
     }
 
-
-    //async void Characters_SelectionChanged(System.Object sender, Microsoft.Maui.Controls.SelectionChangedEventArgs e)
-    //{
-    //    await Navigation.PushAsync(new EndPage(e.CurrentSelection.First() as Monsters));
-    //}
-
-=========
->>>>>>>>> Temporary merge branch 2
-
-    //async void Characters_SelectionChanged(System.Object sender, Microsoft.Maui.Controls.SelectionChangedEventArgs e)
-    //{
-    //    await Navigation.PushAsync(new EndPage(e.CurrentSelection.First() as Monsters));
-    //}
-
-=========
->>>>>>>>> Temporary merge branch 2
-
     async void GridArea_Tapped(System.Object sender, System.EventArgs e)
     {
 

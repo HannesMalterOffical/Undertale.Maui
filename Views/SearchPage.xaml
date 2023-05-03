@@ -20,7 +20,7 @@
 
         <Grid
             x:Name="MainContentGrid"
-            Padding="24,52,24,0"
+            Padding="24,-10,24,0"
             BackgroundColor="{StaticResource PageBackgroundColor}"
             ColumnDefinitions="*,Auto"
             RowDefinitions="Auto,*">
@@ -89,14 +89,14 @@
                     <!--List of all monsters-->
                     <CollectionView
                         x:Name="AllMonsterLst"
-                        HeightRequest="160"
+                        HeightRequest="600"
                         SelectionMode="Single"
                         SelectionChanged="Characters_SelectionChanged">
 
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout
                                 Orientation="Vertical"
-                                ItemSpacing="16" />
+                                ItemSpacing="12" />
                         </CollectionView.ItemsLayout>
 
                         <CollectionView.ItemTemplate>
@@ -104,10 +104,10 @@
                                 x:DataType="Models:Monsters">
                                 <Border
                                     VerticalOptions="Fill"
-                                    WidthRequest="140"
+                                    WidthRequest="120"
                                     StrokeThickness="0"
-                                    Background=" #a12"
-                                    Padding="16">
+                                    Background=" #a12351"
+                                    Padding="20">
 
                                     <Border.StrokeShape>
                                         <RoundRectangle CornerRadius="16"/>
@@ -120,7 +120,6 @@
                                         <Image
                                             Grid.Row="0"
                                             Source="{Binding CharacterImage}"
-                                            Rotation="-30"
                                             Aspect="AspectFit"                                        
                                             VerticalOptions="Fill"
                                             HorizontalOptions="Fill"/>
@@ -129,7 +128,10 @@
                                             Grid.Row="1"
                                             Style="{StaticResource AllPlanetHeaderStyle}"
                                             Text="{Binding Name}"
+                                            TextColor="White"
                                             Margin="0,4,0,0"/>
+                                        
+
 
                                     </Grid>
 

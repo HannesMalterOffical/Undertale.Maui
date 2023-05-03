@@ -15,5 +15,6 @@ namespace Undertale.Maui.Models
         public List<string> Images { get; set; }
     }
 
+
 }
 

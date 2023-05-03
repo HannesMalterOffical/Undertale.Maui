@@ -12,8 +12,6 @@ public partial class SearchPage : ContentPage
 
     protected override void OnAppearing()
     {
-        base.OnAppearing();
-
         AllMonsterLst.ItemsSource = MonsterServices.GetAllMonsters();
     }
 
@@ -22,14 +20,10 @@ public partial class SearchPage : ContentPage
         await Navigation.PushAsync(new EndPage(e.CurrentSelection.First() as Monsters));
     }
 
-    //async void Characters_SelectionChanged(System.Object sender, Microsoft.Maui.Controls.SelectionChangedEventArgs e)
-    //{
-    //    await Navigation.PushAsync(new EndPage(e.CurrentSelection.First() as Monsters));
-    //}
-
 
     async void GridArea_Tapped(System.Object sender, System.EventArgs e)
     {
 
     }
+
 }

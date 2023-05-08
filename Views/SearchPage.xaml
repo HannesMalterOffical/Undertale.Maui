@@ -46,7 +46,7 @@
                 VerticalOptions="Center">
 
                 <Label
-                    Style="{StaticResource PageHeaderStyle}"
+                    Style="{StaticResource BaseUnderTaleStyle}"
                     Text="The Undertale Characters"/>
 
                 <Label
@@ -90,7 +90,7 @@
                                     Padding="26">
 
                                     <Border.StrokeShape>
-                                        <RoundRectangle CornerRadius="16"/>
+                                       
                                     </Border.StrokeShape>
 
                                     <Grid
@@ -107,7 +107,7 @@
 
                                         <Label
                                             Grid.Row="1"
-                                            Style="{StaticResource AllPlanetHeaderStyle}"
+                                            Style="{StaticResource SmolUnderTaleStyle}"
                                             Text="{Binding Name}"
                                             TextColor="White"
                                             Margin="0,4,0,0"/>
@@ -150,7 +150,7 @@
                                     
 
                                     <Border.StrokeShape>
-                                        <RoundRectangle CornerRadius="16"/>
+                                       
                                     </Border.StrokeShape>
 
                                     <Grid
@@ -167,7 +167,7 @@
 
                                         <Label
                                             Grid.Row="1"
-                                            Style="{StaticResource AllPlanetHeaderStyle}"
+                                            Style="{StaticResource SmolUnderTaleStyle}"
                                             Text="{Binding BossName}"
                                             TextColor="White"
                                             Margin="0,4,0,0"/>

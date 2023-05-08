@@ -72,7 +72,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\EndPageBoss.xaml.cs">
+	    <DependentUpon>EndPageBoss.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Views\BeginningPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\EndPageBoss.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\SearchPage.xaml">

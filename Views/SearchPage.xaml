@@ -107,7 +107,7 @@
                         x:Name="AllMonsterLst"
                         HeightRequest="600"
                         SelectionMode="Single"
-                        SelectionChanged="Characters_SelectionChanged">
+                        SelectionChanged="Characters_SelectionChangedMonster">
 
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout
@@ -163,7 +163,7 @@
                         x:Name="AllBossMonsterLst"
                         HeightRequest="600"
                         SelectionMode="Single"
-                        SelectionChanged="Characters_SelectionChanged"
+                        SelectionChanged="Characters_SelectionChangedBoss"
                         TranslationX="155"
                         TranslationY="-615">
                         

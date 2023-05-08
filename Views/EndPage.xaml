@@ -8,18 +8,18 @@
     <Grid
         
         Margin="24,52,24,0"
-        IgnoreSafeArea="{OnPlatform Android=False, iOS=True}"
         ColumnDefinitions="*,*"
         RowDefinitions="Auto,*">
 
         <ImageButton
             WidthRequest="24"
             HeightRequest="24"
-            Source="imgback.png"
+            Source="backarrow.png"
             Grid.Row="0"
             Grid.Column="0"
             HorizontalOptions="Start"
             VerticalOptions="Center"
+            Clicked="BackButton_Clicked"
              />
 
         <ImageButton
@@ -45,7 +45,7 @@
 
                 <!--Monster Image-->
                 <Image
-                    Source="{Binding CharacterImage}" 
+                    Source="{Binding CharacterImage}"
                     Aspect="AspectFit"
                     HorizontalOptions="Fill"
                     HeightRequest="240"
@@ -53,28 +53,22 @@
 
                 <!--Monster Name-->
                 <Label
-                    Margin="0,-24,0,0"
-                    Style="{StaticResource AllMonsterHeaderSubtitleStyle}"
-                    Text="{Binding BossName}" />
+                    Margin="0,0,0,0"
+                    TextColor="White"
+                    Text="{Binding Name}" />
 
                 <!--Monster Subtitle-->
                 <Label
-                    Margin="0,-12,0,0"
-                    Style="{StaticResource MonsterHeaderSubtitleStyle}"
-                    Text="{Binding BossQuote}" />
-
-                <!--Divider-->
-                <Rectangle
-                    HorizontalOptions="Fill"
-                    HeightRequest="2"
-                    Stroke="Transparent"
-                    Fill="{StaticResource LightBorderColor}" />
+                    Margin="0,0,0,0"
+                    TextColor="White"
+                    Text="{Binding Quote}" />
 
                 <!--Monster info-->
                 <Label
                     Style="{StaticResource MonsterDetailsTextStyle}"
                     LineBreakMode="WordWrap"
-                    Text="{Binding Description}" />
+                    Text="{Binding Description}"
+                    TextColor="White"/>
 
                 <!--Divider-->
                 <Rectangle
@@ -118,10 +112,16 @@
                             </Image>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
+                    
 
                 </CollectionView>
 
+
+
+
             </VerticalStackLayout>
+            
+            
 
         </ScrollView>
 

@@ -1,24 +1,40 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:src="clr-namespace:Undertale.Maui;assembly=Undertale.Maui"
+             xmlns:models="clr-namespace:Undertale.Maui.Models"
              x:Class="Views.SearchPage"
+             xmlns:model="clr-namespace:Undertale.Maui.Models"
              Title="SearchPage"
              BackgroundColor="Black">
+    
+            
 
     <Grid>
+        <Line
+                X1="190" Y1="10"
+                X2="190" Y2="800"
+                Stroke="White"
+                StrokeThickness="2"
+                TranslationX="160"
+                TranslationY="100"/>
+
+
         <Grid
-            x:Name="MenuContainer"
-            IgnoreSafeArea="{OnPlatform Android=False,iOS=True}">
+            x:Name="MenuContainer">
 
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="GridArea_Tapped"/>
             </Grid.GestureRecognizers>
 
+          
         </Grid>
+
+        
 
         <Grid
             x:Name="MainContentGrid"
-            Padding="24,52,24,0"
+            Padding="24,-10,24,0"
             BackgroundColor="{StaticResource PageBackgroundColor}"
             ColumnDefinitions="*,Auto"
             RowDefinitions="Auto,*">
@@ -44,68 +60,34 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
                 HorizontalScrollBarVisibility="Never"
-                VerticalScrollBarVisibility="Never"
+                VerticalScrollBarVisibility="Always"
                 Margin="0,32,-24,0">
+
 
                 <VerticalStackLayout
                     Spacing="12">
-
-                    <Border
-                        Padding="12,4"
-                        BackgroundColor="#33CCCCCC"
-                        Stroke="{StaticResource BorderColor}"
-                        HorizontalOptions="Fill"
-                        Margin="0,0,24,0"
-                        HeightRequest="48">
-                        <Border.StrokeShape>
-                            <RoundRectangle CornerRadius="6"/>
-                        </Border.StrokeShape>
-                        
-                        <Grid
-                            HorizontalOptions="Fill"
-                            VerticalOptions="Center"
-                            ColumnDefinitions="Auto,*"
-                            ColumnSpacing="16">
-
-                            <Image
-                                WidthRequest="18"
-                                HeightRequest="18"
-                                Source="imgsearch.png"
-                                Grid.Column="0"
-                                VerticalOptions="Center" />
-
-                            <Label
-                                Text="Search for your favorite Character"
-                                Grid.Column="1"
-                                VerticalOptions="Center"
-                                VerticalTextAlignment="Center"
-                                Style="{StaticResource MenuLabelStyle}" />
-
-                        </Grid>
-
-                    </Border>
-
+                <!--List of all monsters-->
                     <CollectionView
-                        x:Name="lstAllPlanets"
-                        HeightRequest="160"
-                        SelectionMode="Single">
-                        <!--SelectionChanged="Planets_SelectionChanged"> -->
+                        x:Name="AllMonsterLst"
+                        HeightRequest="600"
+                        SelectionMode="Single"
+                        SelectionChanged="Characters_SelectionChanged">
 
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout
-                                Orientation="Horizontal"
-                                ItemSpacing="16" />
+                                Orientation="Vertical"
+                                ItemSpacing="12" />
                         </CollectionView.ItemsLayout>
 
                         <CollectionView.ItemTemplate>
-                            <DataTemplate>
-                                <!--:DataType="Models:Monsters"> -->
+                            <DataTemplate
+                                x:DataType="models:Monsters">
                                 <Border
                                     VerticalOptions="Fill"
-                                    WidthRequest="140"
+                                    WidthRequest="120"
                                     StrokeThickness="0"
-                                    Background="{Binding Background}"
-                                    Padding="16">
+                                    Background=" #a12"
+                                    Padding="26">
 
                                     <Border.StrokeShape>
                                         <RoundRectangle CornerRadius="16"/>
@@ -117,8 +99,8 @@
 
                                         <Image
                                             Grid.Row="0"
-                                            Source="{Binding HeroImage}"
-                                            Rotation="-30"
+                                            Source="{Binding CharacterImage}"
+                                            Rotation="0"
                                             Aspect="AspectFit"                                        
                                             VerticalOptions="Fill"
                                             HorizontalOptions="Fill"/>
@@ -127,6 +109,67 @@
                                             Grid.Row="1"
                                             Style="{StaticResource AllPlanetHeaderStyle}"
                                             Text="{Binding Name}"
+                                            TextColor="White"
+                                            Margin="0,4,0,0"/>
+                                        
+
+
+                                    </Grid>
+
+                                </Border>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+
+                    </CollectionView>
+
+                    <!--List of all Boss monsters-->
+                    <CollectionView
+                        x:Name="AllBossMonsterLst"
+                        HeightRequest="600"
+                        SelectionMode="Single"
+                        SelectionChanged="Characters_SelectionChanged"
+                        TranslationX="155"
+                        TranslationY="-615">
+                        
+                        
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout
+                                Orientation="Vertical"
+                                ItemSpacing="16" />
+                        </CollectionView.ItemsLayout>
+
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate
+                                x:DataType="models:BossMonsters">
+                                <Border
+                                    VerticalOptions="Center"
+                                    WidthRequest="140"
+                                    StrokeThickness="0"
+                                    Background=" #a12"
+                                    Padding="16">
+                                    
+
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="16"/>
+                                    </Border.StrokeShape>
+
+                                    <Grid
+                                        RowDefinitions="*,Auto,Auto"
+                                        RowSpacing="4">
+
+                                        <Image
+                                            Grid.Row="0"
+                                            Source="{Binding CharacterImage}"
+                                            Rotation="0"
+                                            Aspect="AspectFit"                                        
+                                            VerticalOptions="Fill"
+                                            HorizontalOptions="Fill"/>
+
+                                        <Label
+                                            Grid.Row="1"
+                                            Style="{StaticResource AllPlanetHeaderStyle}"
+                                            Text="{Binding BossName}"
+                                            TextColor="White"
                                             Margin="0,4,0,0"/>
 
                                     </Grid>
@@ -142,6 +185,7 @@
             </ScrollView>
             
         </Grid>
+
     </Grid>
     
 

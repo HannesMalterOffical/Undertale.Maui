@@ -1,4 +1,8 @@
-﻿namespace Undertale.Maui.Models
+﻿using Microsoft.Maui.Graphics;
+using System.Drawing;
+using Color = Microsoft.Maui.Graphics.Color;
+
+namespace Undertale.Maui.Models
 {
     public class Monsters
     {
@@ -10,4 +14,7 @@
         public Color AccentColorEnd { get; set; }
         public List<string> Images { get; set; }
     }
+
+
 }
+

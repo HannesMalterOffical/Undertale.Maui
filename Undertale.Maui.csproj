@@ -57,12 +57,14 @@
 	  <None Remove="Resources\Images\frontpageguidebanner.png" />
 	  <None Remove="Resources\Images\frontpageriver.PNG" />
 	  <None Remove="Resources\Images\frontpagetree.png" />
+	  <None Remove="Resources\Images\imgsearch.png" />
 	  <None Remove="Resources\Images\papyrusfrontpage.jpg" />
 	  <None Remove="Resources\Images\Sans_undertale.jpg" />
 	  <None Remove="Resources\Images\torielfrontpage.png" />
 	  <None Remove="Resources\Images\undertalebanner.png" />
 	  <None Remove="Resources\Images\undertalesansfrontpage.jpg" />
 	  <None Remove="Resources\Images\undynefrontpage.jpg" />
+	  <None Remove="Resources\Images\whiteline.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>

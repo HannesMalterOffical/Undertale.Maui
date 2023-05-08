@@ -1,6 +1,3 @@
-using Undertale.Maui.Models;
-
-
 namespace Views;
 
 public partial class EndPage : ContentPage
@@ -11,4 +8,7 @@ public partial class EndPage : ContentPage
 
         this.BindingContext = monsters;
     }
+
+    private void BackButton_Clicked(object sender, EventArgs e)
+        => Application.Current.MainPage = new NavigationPage(new SearchPage());
 }

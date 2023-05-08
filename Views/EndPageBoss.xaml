@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Views.EndPage"
+             x:Class="Views.EndPageBoss"
              Title="EndPage" 
              BackgroundColor="Black">
 
@@ -53,28 +53,24 @@
 
                 <Line></Line>
 
-                <!-- Monster Name-->
+                <!-- BossMonster Name-->
                 
                 <Label
                     Margin="0,0,0,0"
                     TextColor="White"
-                    Text="{Binding Name}" />
-                
-                <!-- BossMonster Name-->
-
+                    Text="{Binding BossName}" />
                 <Line></Line>
 
-                <!--Monster Subtitle-->
+                
+
+                <!-- BossMonster Subtitle-->
                 <Label
                     Margin="0,0,0,0"
                     TextColor="White"
-                    Text="{Binding Quote}" />
+                    Text="{Binding BossQuote}" />
+                <Line></Line>
 
-                <!-- BossMonster Subtitle-->
-                <Line>
-                    </Line>
-
-                    <!--Monster info-->
+                <!--Monster info-->
                 <Label
                     Style="{StaticResource MonsterDetailsTextStyle}"
                     LineBreakMode="WordWrap"

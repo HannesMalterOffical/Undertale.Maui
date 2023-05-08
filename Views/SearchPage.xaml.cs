@@ -16,11 +16,17 @@ public partial class SearchPage : ContentPage
         AllBossMonsterLst.ItemsSource = BossMonsterServices.GetAllBossMonsters();
     }
 
-    async void Characters_SelectionChanged(System.Object sender, Microsoft.Maui.Controls.SelectionChangedEventArgs e)
+    async void Characters_SelectionChangedMonster(System.Object sender, Microsoft.Maui.Controls.SelectionChangedEventArgs e)
     {
         await Navigation.PushAsync(new EndPage(e.CurrentSelection.First() as Monsters));
-
     }
+    async void Characters_SelectionChangedBoss(System.Object sender, Microsoft.Maui.Controls.SelectionChangedEventArgs e)
+    {
+        await Navigation.PushAsync(new EndPageBoss(e.CurrentSelection.First() as BossMonsters));
+    }
+
+
+
 
     async void GridArea_Tapped(System.Object sender, System.EventArgs e)
     {

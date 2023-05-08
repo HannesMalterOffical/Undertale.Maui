@@ -41,7 +41,7 @@
                 VerticalOptions="Center">
 
                 <Label
-                    Style="{StaticResource BaseUnderTaleStyle}"
+                    Style="{StaticResource HeaderUnderTaleStyle}"
                     Text="The Undertale Characters"/>
 
                 <Label

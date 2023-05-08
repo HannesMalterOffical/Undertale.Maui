@@ -32,6 +32,14 @@
         <Setter Property="FontFamily" Value="MonsterFriendFore" />
     </Style>
 
+    <Style TargetType="Label" x:Key="HeaderUnderTaleStyle">
+        <Setter Property="FontAutoScalingEnabled" Value="False" />
+        <Setter Property="LineBreakMode" Value="TailTruncation" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="FontFamily" Value="MonsterFriendFore" />
+    </Style>
+
     <Style TargetType="Label" x:Key="BaseBoldLabelStyle">
         <Setter Property="LineBreakMode" Value="TailTruncation" />
         <Setter Property="FontAutoScalingEnabled" Value="False" />
